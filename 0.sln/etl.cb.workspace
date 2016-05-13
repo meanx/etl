@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="March">
+		<Project filename="../event_test/event_test.cbp" />
+		<Project filename="../thread/thread.cbp" />
+		<Project filename="../thread_test/thread_test.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>
