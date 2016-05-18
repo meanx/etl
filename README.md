@@ -6,9 +6,9 @@
 
 - [Linux Pthread 深入解析](http://blog.chinaunix.net/uid-21084809-id-2215376.html)
 - [Linux 线程编程](http://www.cnblogs.com/forstudy/archive/2012/04/05/2433853.html)
-- [Linux多线程编程 - sleep 和 pthread_cond_timedwait](http://www.cnblogs.com/qingxia/archive/2012/08/30/2663791.html)
+- [Linux 多线程编程 - sleep 和 pthread_cond_timedwait](http://www.cnblogs.com/qingxia/archive/2012/08/30/2663791.html)
 - .
-- [C++实现简单的线程池](http://www.cppblog.com/Chosen/archive/2013/10/07/203568.aspx)
+- [C++ 实现简单的线程池](http://www.cppblog.com/Chosen/archive/2013/10/07/203568.aspx)
 - [线程池的介绍及简单实现](http://www.ibm.com/developerworks/cn/java/l-threadPool/)
 
 
