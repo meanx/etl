@@ -657,7 +657,7 @@ void ThreadImpl::Run()
 	m_hThread  = 0;
 	m_threadId = 0;
 #elif defined _LINUX
-	m_threadId = 0;
+//	m_threadId = 0;		// Either pthread_join(3) or pthread_detach() should be called for each thread
 	pthread_exit(NULL); // must call at last.
 #endif
 }
@@ -672,7 +672,7 @@ bool ThreadImpl::Start()
 	DWORD id;
 	HANDLE hdlThread = ::CreateThread( // MSDN: If the function fails, the return value is NULL
 		NULL, 
-		, 
+		0, 
 		reinterpret_cast<LPTHREAD_START_ROUTINE>(threadProc),
 		(void*)this,
 		0, 
@@ -718,7 +718,7 @@ void ThreadImpl::Join()
 	}
 #elif defined _LINUX
 	if (0 != m_threadId) {
-		pthread_join(m_threadId, NULL);
+		pthread_join(m_threadId, NULL); m_threadId = 0;
 	}
 #endif
 }
